@@ -67,6 +67,8 @@ func main() {
 
     - git push heroku master
 
+  - 部署完成，[https://evening-tundra-19792.herokuapp.com/hello](https://evening-tundra-19792.herokuapp.com/hello)
+
     
 
 - 坑
