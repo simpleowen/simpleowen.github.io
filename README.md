@@ -1,5 +1,7 @@
 # 我坦白!
 
+- [配置鼠须管使用全套英文标点](squirrel_punctuator.md) #squirrel #punctuator
+
 - [Golang 获取 Github API 分页总页数](github_api_pagination.md) #golang #github api #pagination
 
 - [部署 golang 程序到 heroku](heroku_golang_deploy.md)  #golang #heroku
