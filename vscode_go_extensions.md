@@ -34,25 +34,23 @@ gometalinter --install
 
 对于 `非  golang.org` 下的包，可通过以下脚本处理
 
-```
+```shell
 go get -u -v github.com/ramya-rao-a/go-outline
 go get -u -v github.com/acroca/go-symbols
 go get -u -v github.com/mdempsky/gocode
 go get -u -v github.com/rogpeppe/godef
 go get -u -v github.com/zmb3/gogetdoc
 go get -u -v github.com/fatih/gomodifytags
-go get -u -v sourcegraph.com/sqs/goreturns
-go get -u -v github.com/cweill/gotests/...
+go get -u -v github.com/sqs/goreturns
+go get -u -v github.com/cweill/gotests
 go get -u -v github.com/josharian/impl
-go get -u -v github.com/haya14busa/goplay/cmd/goplay
-go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
-go get -u -v github.com/davidrjenni/reftools/cmd/fillstruct
+go get -u -v github.com/haya14busa/goplay
+go get -u -v github.com/uudashr/gopkgs
+go get -u -v github.com/davidrjenni/reftools
 go get -u -v github.com/alecthomas/gometalinter
 ```
 
-
-
-对于 ` golang.org` 下的包，则需要进行特殊处理：克隆 github.com 上的镜像包到固定目录
+对于 `golang.org` 下的包，则需要进行特殊处理：克隆 github.com 上的镜像包到固定目录
 
 进入 `$GOPATH/src/golang.org/x` , 若无此目录，新建即可。将以下脚本内拷贝到命令行执行
 
@@ -71,7 +69,5 @@ git clone git@github.com:golang/exp.git
 git clone git@github.com:golang/crypto.git
 git clone git@github.com:golang/oauth2.git
 ```
-
-
 
 经过上述两类处理后，VScode 的 golang 环境就算比较好用了。
