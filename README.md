@@ -10,3 +10,4 @@
 - [在 heroku 上使用 elasticsearch 从入门到放弃](es_on_heroku.md) #heroku #adds-on #elasticsearch #bonsai
 - [在 linux 上安装 elasticsearch](elasticsearch_installation_on_linux.md) #linux #elasticsearch
 - [[译] Golang 中的流式 IO](golang_io_interface.md) #golang #io #interface
+- [2019年的唾沫星子](spit_in_2019.md) #speech
