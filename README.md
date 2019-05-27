@@ -1,5 +1,6 @@
 # 我坦白~
 
+- [有用的 Golang 链接](golang_links.md)
 - [使用 Pandoc 将 markdown 文档生成幻灯片](pandoc2slides.md) #pandoc #markdown #slide #reveal.js
 - [我的工具箱](toolbox.md) #tool
 - [配置鼠须管使用全套英文标点](squirrel_punctuator.md) #squirrel #punctuator
