@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github api on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/github-api/</link>
+    <description>Recent content in github api on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:15:13 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/github-api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang 获取 Github API 分页总页数</title>
+      <link>https://simpleowen.github.io/post/github_api_pagination/</link>
+      <pubDate>Wed, 29 May 2019 12:15:13 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/github_api_pagination/</guid>
+      <description>Github API 会自动对所请求的项目进行分页 不同的 API 会有不同的每页数目，有的 API 默认每页 100 项，有的 API 默认每页 30 项，可以通过 per_page=xxx 参数改变每页展示项目数，但最大</description>
+    </item>
+    
+  </channel>
+</rss>

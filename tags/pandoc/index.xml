@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pandoc on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/pandoc/</link>
+    <description>Recent content in pandoc on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:25:55 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用 Pandoc 将 markdown 文档生成幻灯片</title>
+      <link>https://simpleowen.github.io/post/pandoc2slides/</link>
+      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/pandoc2slides/</guid>
+      <description>目标 生成一份 Pandoc 2 Slide 这样的幻灯片 幻灯片能往水平和垂直两个方向运动 环境 macOS 依赖 Pandoc Reveal.js 安装 安装 Pandoc brew install pandoc pandoc &amp;ndash;version 安装 Reveal.js 从 Releases · hakimel/reveal.js 下载解压, 将目录名改为 reveal.js 使用 新</description>
+    </item>
+    
+  </channel>
+</rss>

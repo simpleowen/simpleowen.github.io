@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:33:36 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的工具箱</title>
+      <link>https://simpleowen.github.io/post/toolbox/</link>
+      <pubDate>Wed, 29 May 2019 12:33:36 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/toolbox/</guid>
+      <description>macOS 输出平台 github.com 版本管理 git 命令行 iTerm shell zsh shell 框架 oh-my-zsh 中文输入法 鼠须管 Squirrel 远程协助 TeamViewer 网络会议 Zoom 团队沟通 Slack 倍洽 DingTalk markdown 编辑器 typora sublime text 编程 IDE VSCode 编程文档 Dash 云盘 百度网盘</description>
+    </item>
+    
+    <item>
+      <title>Usefull Go Links</title>
+      <link>https://simpleowen.github.io/post/golang_usefull_links/</link>
+      <pubDate>Wed, 29 May 2019 12:20:07 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/golang_usefull_links/</guid>
+      <description>Groups GoUserGroups · golang/go Wiki Go程式語言 (Golang Taiwan, Gopher Taipei) Singapore Gophers golang-nuts – Google Groups Golang-China – Google Groups golang-announce – Google Groups Go Time Podcast Go中国技术社区 - golang Go Forum Join Our New Slack Community For Gophers GopherAcademy Go Tools Chrome Extensions Go Playground Addons - Chrome Web Store Editor plugins and IDEs The Go Playground</description>
+    </item>
+    
+  </channel>
+</rss>

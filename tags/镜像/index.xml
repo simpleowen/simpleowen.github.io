@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>镜像 on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/%E9%95%9C%E5%83%8F/</link>
+    <description>Recent content in 镜像 on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:18:20 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/%E9%95%9C%E5%83%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常用 golang.org 镜像包</title>
+      <link>https://simpleowen.github.io/post/go_mod/</link>
+      <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/go_mod/</guid>
+      <description>由于众所周知的原因，国内无法下载位于谷歌服务器上的包，如 golang.org/x/net, golang.org/x/text , golang.org/x/sys，甚至使用 VPN 的情况下，也无法下载 但这些包基本都</description>
+    </item>
+    
+  </channel>
+</rss>

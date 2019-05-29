@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang.org on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/golang.org/</link>
+    <description>Recent content in golang.org on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:18:20 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/golang.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常用 golang.org 镜像包</title>
+      <link>https://simpleowen.github.io/post/go_mod/</link>
+      <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/go_mod/</guid>
+      <description>由于众所周知的原因，国内无法下载位于谷歌服务器上的包，如 golang.org/x/net, golang.org/x/text , golang.org/x/sys，甚至使用 VPN 的情况下，也无法下载 但这些包基本都</description>
+    </item>
+    
+    <item>
+      <title>VScode 安装 go 插件</title>
+      <link>https://simpleowen.github.io/post/vscode_go_extensions/</link>
+      <pubDate>Wed, 29 May 2019 12:11:34 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/vscode_go_extensions/</guid>
+      <description>在 VScode 使用过程中，会提示安装 各种 go 插件，点击安装后，很多插件安装都会失败 其中，安装失败的包主要是 golang.org 上的包(由于众所周知的原因)，而很多其他包又</description>
+    </item>
+    
+  </channel>
+</rss>

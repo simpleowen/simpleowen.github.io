@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/golang/</link>
+    <description>Recent content in golang on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:30:37 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[译] golang 中的 io 流</title>
+      <link>https://simpleowen.github.io/post/golang_io/</link>
+      <pubDate>Wed, 29 May 2019 12:30:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/golang_io/</guid>
+      <description>原文链接 Streaming IO in Go – Learning the Go Programming Language – Medium 以下为译文 在 Go 中，输入输出操作是通过能读能写的字节流数据模型来实现的。为此，io 包提供了 io.Reader 和 io.Writer 接口来进行输入</description>
+    </item>
+    
+  </channel>
+</rss>

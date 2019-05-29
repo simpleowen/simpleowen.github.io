@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>链接 on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/%E9%93%BE%E6%8E%A5/</link>
+    <description>Recent content in 链接 on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 12:20:07 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/%E9%93%BE%E6%8E%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Usefull Go Links</title>
+      <link>https://simpleowen.github.io/post/golang_usefull_links/</link>
+      <pubDate>Wed, 29 May 2019 12:20:07 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/golang_usefull_links/</guid>
+      <description>Groups GoUserGroups · golang/go Wiki Go程式語言 (Golang Taiwan, Gopher Taipei) Singapore Gophers golang-nuts – Google Groups Golang-China – Google Groups golang-announce – Google Groups Go Time Podcast Go中国技术社区 - golang Go Forum Join Our New Slack Community For Gophers GopherAcademy Go Tools Chrome Extensions Go Playground Addons - Chrome Web Store Editor plugins and IDEs The Go Playground</description>
+    </item>
+    
+  </channel>
+</rss>

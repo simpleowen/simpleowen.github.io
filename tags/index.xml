@@ -6,26 +6,188 @@
     <description>Recent content in Tags on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 May 2019 11:06:41 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 12:33:36 -0400</lastBuildDate>
     
 	<atom:link href="https://simpleowen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>标点</title>
-      <link>https://simpleowen.github.io/tags/%E6%A0%87%E7%82%B9/</link>
-      <pubDate>Wed, 29 May 2019 11:06:41 -0400</pubDate>
+      <title>工具</title>
+      <link>https://simpleowen.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 29 May 2019 12:33:36 -0400</pubDate>
       
-      <guid>https://simpleowen.github.io/tags/%E6%A0%87%E7%82%B9/</guid>
+      <guid>https://simpleowen.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>鼠须管</title>
-      <link>https://simpleowen.github.io/tags/%E9%BC%A0%E9%A1%BB%E7%AE%A1/</link>
-      <pubDate>Wed, 29 May 2019 11:06:41 -0400</pubDate>
+      <title>golang</title>
+      <link>https://simpleowen.github.io/tags/golang/</link>
+      <pubDate>Wed, 29 May 2019 12:30:37 -0400</pubDate>
       
-      <guid>https://simpleowen.github.io/tags/%E9%BC%A0%E9%A1%BB%E7%AE%A1/</guid>
+      <guid>https://simpleowen.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>io</title>
+      <link>https://simpleowen.github.io/tags/io/</link>
+      <pubDate>Wed, 29 May 2019 12:30:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>接口</title>
+      <link>https://simpleowen.github.io/tags/%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Wed, 29 May 2019 12:30:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E6%8E%A5%E5%8F%A3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>流</title>
+      <link>https://simpleowen.github.io/tags/%E6%B5%81/</link>
+      <pubDate>Wed, 29 May 2019 12:30:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E6%B5%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elasticsearch</title>
+      <link>https://simpleowen.github.io/tags/elasticsearch/</link>
+      <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://simpleowen.github.io/tags/linux/</link>
+      <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>安装</title>
+      <link>https://simpleowen.github.io/tags/%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E5%AE%89%E8%A3%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandoc</title>
+      <link>https://simpleowen.github.io/tags/pandoc/</link>
+      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reveal.js</title>
+      <link>https://simpleowen.github.io/tags/reveal.js/</link>
+      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/reveal.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slide</title>
+      <link>https://simpleowen.github.io/tags/slide/</link>
+      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/slide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>幻灯片</title>
+      <link>https://simpleowen.github.io/tags/%E5%B9%BB%E7%81%AF%E7%89%87/</link>
+      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E5%B9%BB%E7%81%AF%E7%89%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://simpleowen.github.io/tags/heroku/</link>
+      <pubDate>Wed, 29 May 2019 12:21:52 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>部署</title>
+      <link>https://simpleowen.github.io/tags/%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Wed, 29 May 2019 12:21:52 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E9%83%A8%E7%BD%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>社区</title>
+      <link>https://simpleowen.github.io/tags/%E7%A4%BE%E5%8C%BA/</link>
+      <pubDate>Wed, 29 May 2019 12:20:07 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E7%A4%BE%E5%8C%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>链接</title>
+      <link>https://simpleowen.github.io/tags/%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 29 May 2019 12:20:07 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E9%93%BE%E6%8E%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go.mod</title>
+      <link>https://simpleowen.github.io/tags/go.mod/</link>
+      <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/go.mod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang.org</title>
+      <link>https://simpleowen.github.io/tags/golang.org/</link>
+      <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/golang.org/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>镜像</title>
+      <link>https://simpleowen.github.io/tags/%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/%E9%95%9C%E5%83%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github api</title>
+      <link>https://simpleowen.github.io/tags/github-api/</link>
+      <pubDate>Wed, 29 May 2019 12:15:13 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/github-api/</guid>
       <description></description>
     </item>
     
