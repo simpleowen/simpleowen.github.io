@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标点 on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/%E6%A0%87%E7%82%B9/</link>
+    <description>Recent content in 标点 on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 11:06:41 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/%E6%A0%87%E7%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>鼠须管(squirrel)使用全套英文标点</title>
+      <link>https://simpleowen.github.io/post/squirrel_punctuator/</link>
+      <pubDate>Wed, 29 May 2019 11:06:41 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/squirrel_punctuator/</guid>
+      <description>鼠须管是一个自定义程度非常高的输入法 配置方法 下载一个 yaml 文件 alternative.yaml 修改 alternative.yaml 文件的 config_version: &amp;quot;0.3&amp;quot; 中的版本号为自定义配置文件版本号 在自定义配置文件中打 patch 我的自定义</description>
+    </item>
+    
+  </channel>
+</rss>

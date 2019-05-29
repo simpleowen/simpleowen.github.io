@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我坦白~</title>
+    <link>https://simpleowen.github.io/</link>
+    <description>Recent content on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 May 2019 11:06:41 -0400</lastBuildDate>
+    
+        <atom:link href="https://simpleowen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>鼠须管(squirrel)使用全套英文标点</title>
+      <link>https://simpleowen.github.io/post/squirrel_punctuator/</link>
+      <pubDate>Wed, 29 May 2019 11:06:41 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/squirrel_punctuator/</guid>
+      
+        <description>
+
+&lt;p&gt;鼠须管是一个自定义程度非常高的输入法&lt;/p&gt;
+
+&lt;h2 id=&#34;配置方法&#34;&gt;配置方法&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;下载一个 yaml 文件
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/lotem/2334409&#34;&gt;&lt;strong&gt;alternative.yaml&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;修改 alternative.yaml 文件的 &lt;code&gt;config_version: &amp;quot;0.3&amp;quot;&lt;/code&gt; 中的版本号为自定义配置文件版本号&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;在自定义配置文件中打 patch&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;我的自定义文件为 &lt;code&gt;default.custom.yaml&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;在该文件末尾添加以下配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;patch:
+&amp;#34;punctuator&amp;#34;:
+&amp;#34;import_preset&amp;#34;: alternative&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;重新部署&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Deploy&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rime/home/wiki/CustomizationGuide#%E4%BD%BF%E7%94%A8%E5%85%A8%E5%A5%97%E8%A5%BF%E6%96%87%E6%A8%99%E9%BB%9E&#34;&gt;CustomizationGuide · rime/home Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>
