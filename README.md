@@ -1,5 +1,6 @@
 # 目录
 
+- [[译]go-database-sql-tutorial](https://github.com/simpleowen/go-database-sql-tutorial-cn)
 - [我的工具箱](https://simpleowen.github.io/post/toolbox/)
 - [[译] golang 中的 io 流](https://simpleowen.github.io/post/golang_io/)
 - [在 Linux 下安装 Elasticsearch](https://simpleowen.github.io/post/es_installation_on_linux/)
