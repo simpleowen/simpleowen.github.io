@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 May 2019 12:33:36 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 10:35:25 -0400</lastBuildDate>
     
 	<atom:link href="https://simpleowen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Database</title>
+      <link>https://simpleowen.github.io/tags/database/</link>
+      <pubDate>Fri, 07 Jun 2019 10:35:25 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>https://simpleowen.github.io/tags/postgresql/</link>
+      <pubDate>Fri, 07 Jun 2019 10:35:25 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/postgresql/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>工具</title>
@@ -170,24 +188,6 @@
       <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
       
       <guid>https://simpleowen.github.io/tags/golang.org/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>镜像</title>
-      <link>https://simpleowen.github.io/tags/%E9%95%9C%E5%83%8F/</link>
-      <pubDate>Wed, 29 May 2019 12:18:20 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/%E9%95%9C%E5%83%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github api</title>
-      <link>https://simpleowen.github.io/tags/github-api/</link>
-      <pubDate>Wed, 29 May 2019 12:15:13 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/github-api/</guid>
       <description></description>
     </item>
     

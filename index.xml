@@ -6,10 +6,156 @@
     <description>Recent content on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 May 2019 12:33:36 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 10:35:25 -0400</lastBuildDate>
     
         <atom:link href="https://simpleowen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PostgreSQL 常用命令</title>
+      <link>https://simpleowen.github.io/post/postgresql_ops/</link>
+      <pubDate>Fri, 07 Jun 2019 10:35:25 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/postgresql_ops/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;查看当前主机-postgresql-安装路径及版本&#34;&gt;查看当前主机 PostgreSQL 安装路径及版本&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;which psql&lt;/li&gt;
+&lt;li&gt;psql &amp;ndash;version&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;修改-postgres-系统用户密码&#34;&gt;修改 postgres 系统用户密码&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;sudo passwd -d postgres&lt;/li&gt;
+&lt;li&gt;sudo -u postgres passwd&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;查看当前连接信息&#34;&gt;查看当前连接信息&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;\conninfo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;列出所有用户-角色&#34;&gt;列出所有用户(角色)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;\du&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;列出所有数据库&#34;&gt;列出所有数据库&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;\l or \list&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;切换数据库&#34;&gt;切换数据库&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;\c database or \connect database&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;重命名数据库&#34;&gt;重命名数据库&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;切换到不需要重命名的数据库&lt;/li&gt;
+&lt;li&gt;alter database old_dbname rename to new_dbname;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;删除数据库&#34;&gt;删除数据库&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;drop database dbname;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;新建用户&#34;&gt;新建用户&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CREATE USER username WITH PASSWORD &amp;lsquo;password&amp;rsquo; CREATEDB;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;删除用户&#34;&gt;删除用户&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DROP USER username&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;修改密码&#34;&gt;修改密码&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;\password username&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;新建数据库&#34;&gt;新建数据库&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CREATE DATABASE dbname OWNER username;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;修改数据库所有者&#34;&gt;修改数据库所有者&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;alter database dbname owner to username;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;授权用户&#34;&gt;授权用户&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GRANT ALL PRIVILEGES ON DATABASE &amp;ldquo;dbname&amp;rdquo; to username;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;如何连接远程数据库&#34;&gt;如何连接远程数据库&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;su - postgres&lt;/li&gt;
+&lt;li&gt;cd /etc/postgresql/10/main&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;修改两个配置文件&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;postgresql.conf
+
+&lt;ul&gt;
+&lt;li&gt;监听地址改为任意地址: &lt;code&gt;listen_addresses = &#39;*&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;pg_hba.conf
+
+&lt;ul&gt;
+&lt;li&gt;接受任意地址的密码验证: 增加一行 -&amp;gt; &lt;code&gt;host  all  all 0.0.0.0/0 md5&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;重启服务
+
+&lt;ul&gt;
+&lt;li&gt;su - superuser&lt;/li&gt;
+&lt;li&gt;sudo service postgresql restart&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://landcareweb.com/questions/10972/ru-he-tong-guo-linuxjiao-ben-jian-cha-shi-fou-an-zhuang-liao-postgresql&#34;&gt;如何通过Linux脚本检查是否安装了PostgreSQL？ | landcareweb.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/kaituorensheng/p/4735191.html&#34;&gt;修改postgres密码 - jihite - 博客园&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.liquidweb.com/kb/listing-switching-databases-postgresql/&#34;&gt;Listing and Switching Databases in PostgreSQL | Liquid Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.a2hosting.com/kb/developer-corner/postgresql/renaming-a-postgresql-database&#34;&gt;How to rename a PostgreSQL database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.postgresqltutorial.com/postgresql-drop-database/&#34;&gt;PostgreSQL DROP DATABASE - Delete PostgreSQL Databases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/10/sql-createuser.html&#34;&gt;PostgreSQL: Documentation: 8.0: CREATE USER&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://enterprise.arcgis.com/en/server/10.3/cloud/amazon/change-default-database-passwords-on-linux.htm&#34;&gt;Change default PostgreSQL passwords—Documentation (10.3 and 10.3.1) | ArcGIS Enterprise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/10/sql-createdatabase.html&#34;&gt;PostgreSQL: Documentation: 9.0: CREATE DATABASE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.guru99.com/postgresql-create-database.html&#34;&gt;PostgreSQL CREATE DATABASE with Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/22483555/give-all-the-permissions-to-a-user-on-a-db&#34;&gt;postgresql - Give all the permissions to a user on a DB - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tableplus.io/blog/2018/04/postgresql-how-to-grant-access-to-users.html&#34;&gt;PostgreSQL - How to grant access to users? | TablePlus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/10/sql-dropuser.html&#34;&gt;PostgreSQL: Documentation: 9.4: DROP USER&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/10/sql-alterdatabase.html&#34;&gt;PostgreSQL: Documentation: 9.1: ALTER DATABASE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://lazybios.com/2016/11/how-to-make-postgreSQL-can-be-accessed-from-remote-client/&#34;&gt;如何设置PostgreSQL允许被远程访问&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>我的工具箱</title>
