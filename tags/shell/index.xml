@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/shell/</link>
+    <description>Recent content in shell on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Jun 2019 10:29:09 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shell 初步</title>
+      <link>https://simpleowen.github.io/post/shell_intro/</link>
+      <pubDate>Tue, 18 Jun 2019 10:29:09 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/shell_intro/</guid>
+      <description>Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口 比较常见的 Shell 有以下几种: sh ksh csh tcsh bash zsh Shell 配置 Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件 系</description>
+    </item>
+    
+  </channel>
+</rss>

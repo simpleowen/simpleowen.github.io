@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Archive - 我坦白~</title>
+  <title>Shell 初步 - 我坦白~</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="damao" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口 比较常见的 Shell 有以下几种: sh ksh csh tcsh bash zsh Shell 配置 Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件 系" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://simpleowen.github.io/post/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/post/index.xml%20https://simpleowen.github.io/post/index.xml%7d" rel="alternate" type="application/rss+xml" title="我坦白~" />
+<link rel="canonical" href="https://simpleowen.github.io/post/shell_intro/" />
 
 
 
@@ -57,19 +57,27 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://simpleowen.github.io/post/" />
+<meta property="og:title" content="Shell 初步" />
+<meta property="og:description" content="Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口 比较常见的 Shell 有以下几种: sh ksh csh tcsh bash zsh Shell 配置 Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件 系" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simpleowen.github.io/post/shell_intro/" />
+<meta property="article:published_time" content="2019-06-18T10:29:09-04:00"/>
+<meta property="article:modified_time" content="2019-06-18T10:29:09-04:00"/>
 
-<meta property="og:updated_time" content="2019-06-18T10:29:09-04:00"/>
+<meta itemprop="name" content="Shell 初步">
+<meta itemprop="description" content="Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口 比较常见的 Shell 有以下几种: sh ksh csh tcsh bash zsh Shell 配置 Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件 系">
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-06-18T10:29:09-04:00" />
+<meta itemprop="dateModified" content="2019-06-18T10:29:09-04:00" />
+<meta itemprop="wordCount" content="199">
+
+
+
+<meta itemprop="keywords" content="shell," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="Shell 初步"/>
+<meta name="twitter:description" content="Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口 比较常见的 Shell 有以下几种: sh ksh csh tcsh bash zsh Shell 配置 Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件 系"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -266,76 +274,160 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2019</h2>
+    <header class="post-header">
+      <h1 class="post-title">Shell 初步</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-06-18" class="post-time">
+          2019-06-18
+        </time>
+        
+        <span class="more-meta"> 199 words </span>
+          <span class="more-meta"> 1 min read </span>
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/vscode_go_extensions/" class="archive-post-link">
-          VScode 安装 go 插件
-        </a>
-      </span>
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#shell-配置">Shell 配置</a></li>
+<li><a href="#refs">REFs</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<p>Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口</p>
+
+<p>比较常见的 Shell 有以下几种:</p>
+
+<ul>
+<li>sh</li>
+<li>ksh</li>
+<li>csh</li>
+<li>tcsh</li>
+<li>bash</li>
+<li>zsh</li>
+</ul>
+
+<h2 id="shell-配置">Shell 配置</h2>
+
+<p>Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件</p>
+
+<p>系统级别的配置文件位于 <code>/etc</code> 目录下</p>
+
+<p>用户级别的配置文件位于 <code>~</code> 目录下</p>
+
+<p>在 Shell 启动时，会首先执行系统级别的配置文件(如果存在的话), 再执行用户级别的配置文件. 也就是说 <code>~/.bashrc</code> 中的配置会覆盖 <code>/etc/bashrc</code> 中的配置.</p>
+
+<h2 id="refs">REFs</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Unix_shell">Unix shell - Wikipedia</a></li>
+<li><a href="https://www.ibm.com/developerworks/cn/linux/l-lpic1-105-1/index.html">学习 Linux，101: 自定义和使用 shell 环境</a></li>
+<li><a href="https://harttle.land/2016/06/08/shell-config-files.html">Shell 的相关概念和配置方法 | Harttle Land</a></li>
+</ul>
+
     </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">damao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2019-06-18</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
     
 
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/squirrel_punctuator/" class="archive-post-link">
-          鼠须管(squirrel)使用全套英文标点
-        </a>
-      </span>
-    </div></section>
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://simpleowen.github.io/tags/shell/">shell</a>
+          
+        </div>
 
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
       
-      <li >
-        <a href="/post/">1</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/postgresql_ops/">
+            <span class="next-text nav-default">PostgreSQL 常用命令</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
 
   
   
 
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "simpleowen/comments4blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
+  
 
+  
+
+  
+
+    
 
         </div>
       </div>

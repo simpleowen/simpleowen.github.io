@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jun 2019 10:35:25 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2019 10:29:09 -0400</lastBuildDate>
     
 	<atom:link href="https://simpleowen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shell 初步</title>
+      <link>https://simpleowen.github.io/post/shell_intro/</link>
+      <pubDate>Tue, 18 Jun 2019 10:29:09 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/shell_intro/</guid>
+      <description>Shell 是 Unix-Like 操作系统家族中被频繁使用的人机接口 比较常见的 Shell 有以下几种: sh ksh csh tcsh bash zsh Shell 配置 Shell 配置文件可以分为系统级别的配置文件和用户级别的配置文件 系</description>
+    </item>
     
     <item>
       <title>PostgreSQL 常用命令</title>
