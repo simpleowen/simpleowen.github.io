@@ -2,8 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://simpleowen.github.io/post/basic_authorization_github/</loc>
+    <lastmod>2019-06-19T01:39:24-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://simpleowen.github.io/post/</loc>
-    <lastmod>2019-06-18T10:29:09-04:00</lastmod>
+    <lastmod>2019-06-19T01:39:24-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/</loc>
+    <lastmod>2019-06-19T01:39:24-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/github/</loc>
+    <lastmod>2019-06-19T01:39:24-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/</loc>
+    <lastmod>2019-06-19T01:39:24-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/%E8%AE%A4%E8%AF%81/</loc>
+    <lastmod>2019-06-19T01:39:24-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -15,19 +46,7 @@
   </url>
   
   <url>
-    <loc>https://simpleowen.github.io/tags/</loc>
-    <lastmod>2019-06-18T10:29:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://simpleowen.github.io/tags/shell/</loc>
-    <lastmod>2019-06-18T10:29:09-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://simpleowen.github.io/</loc>
     <lastmod>2019-06-18T10:29:09-04:00</lastmod>
     <priority>0</priority>
   </url>

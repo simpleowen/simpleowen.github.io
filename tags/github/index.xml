@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/github/</link>
+    <description>Recent content in github on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Jun 2019 01:39:24 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github 基本认证</title>
+      <link>https://simpleowen.github.io/post/basic_authorization_github/</link>
+      <pubDate>Wed, 19 Jun 2019 01:39:24 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/basic_authorization_github/</guid>
+      <description>通过 Github API v3 进行认证的方式有 2 类 Basic authentication Username and Password Personal Access Token OAuth2 OAuth2 token (sent in a header) OAuth2 key/secret 这 3 种认证方式的认证格式如下: 1 2 3 curl -u &amp;#34;username&amp;#34; https://api.github.com curl -H &amp;#34;Authorization: token OAUTH-TOKEN&amp;#34; https://api.github.com curl &amp;#39;https://api.github.com/users/whatever?client_id=xxxx&amp;amp;client_secret=yyyy&amp;#39; 本文只介绍 Github 的基</description>
+    </item>
+    
+  </channel>
+</rss>

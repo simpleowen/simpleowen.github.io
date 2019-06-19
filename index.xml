@@ -6,10 +6,83 @@
     <description>Recent content on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Jun 2019 10:29:09 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jun 2019 01:39:24 -0400</lastBuildDate>
     
         <atom:link href="https://simpleowen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Github 基本认证</title>
+      <link>https://simpleowen.github.io/post/basic_authorization_github/</link>
+      <pubDate>Wed, 19 Jun 2019 01:39:24 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/basic_authorization_github/</guid>
+      
+        <description>
+
+&lt;p&gt;通过 Github API v3 进行认证的方式有 2 类&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basic authentication
+
+&lt;ul&gt;
+&lt;li&gt;Username and Password&lt;/li&gt;
+&lt;li&gt;Personal Access Token&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;OAuth2
+
+&lt;ul&gt;
+&lt;li&gt;OAuth2 token (sent in a header)&lt;/li&gt;
+&lt;li&gt;OAuth2 key/secret&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这 3 种认证方式的认证格式如下:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;curl -u &amp;#34;username&amp;#34; https://api.github.com
+curl -H &amp;#34;Authorization: token OAUTH-TOKEN&amp;#34; https://api.github.com
+curl &amp;#39;https://api.github.com/users/whatever?client_id=xxxx&amp;amp;client_secret=yyyy&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;本文只介绍 Github 的基本认证 (Basic authentication), 尽管如此, Github 官方强烈建议用户使用 &lt;a href=&#34;https://developer.github.com/apps/building-oauth-apps/&#34;&gt;OAuth&lt;/a&gt; 进行生产环境的认证&lt;/p&gt;
+
+&lt;p&gt;Github 基本认证实现了 RFC2617 标准, 只在返回未经认证的请求时略有差异. RFC2617 要求返回 401 Unauthorized, 但 Github API v3 返回 404 Not Found&lt;/p&gt;
+
+&lt;p&gt;可通过 2 种方式进行 GitHub 基本认证&lt;/p&gt;
+
+&lt;h2 id=&#34;通过-用户名-和-密码&#34;&gt;通过 用户名 和 密码&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;curl -u username &lt;a href=&#34;https://api.github.com/user&#34;&gt;https://api.github.com/user&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这样访问, curl 会提示输入密码&lt;/p&gt;
+
+&lt;h2 id=&#34;通过-oauth-令牌-oauth-tokens&#34;&gt;通过 OAuth 令牌 (OAuth Tokens)&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;curl -u username:token &lt;a href=&#34;https://api.github.com/user&#34;&gt;https://api.github.com/user&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;使用 &lt;a href=&#34;https://github.blog/2013-05-16-personal-api-tokens/&#34;&gt;personal access tokens&lt;/a&gt; 或 OAuth 令牌代替密码也是方案之一&lt;/p&gt;
+
+&lt;h2 id=&#34;链接&#34;&gt;链接&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.github.com/v3/#authentication&#34;&gt;GitHub API v3 Authentication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.github.com/v3/guides/basics-of-authentication/&#34;&gt;Basics of Authentication | GitHub Developer Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.github.com/v3/auth/#other-authentication-methods&#34;&gt;Other Authentication Methods | GitHub Developer Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ietf.org/rfc/rfc2617.txt&#34;&gt;rfc2617&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>Shell 初步</title>

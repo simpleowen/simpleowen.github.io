@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Archive - 我坦白~</title>
+  <title>Github 基本认证 - 我坦白~</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="damao" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="通过 Github API v3 进行认证的方式有 2 类 Basic authentication Username and Password Personal Access Token OAuth2 OAuth2 token (sent in a header) OAuth2 key/secret 这 3 种认证方式的认证格式如下: 1 2 3 curl -u &amp;#34;username&amp;#34; https://api.github.com curl -H &amp;#34;Authorization: token OAUTH-TOKEN&amp;#34; https://api.github.com curl &amp;#39;https://api.github.com/users/whatever?client_id=xxxx&amp;amp;client_secret=yyyy&amp;#39; 本文只介绍 Github 的基" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://simpleowen.github.io/post/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/post/index.xml%20https://simpleowen.github.io/post/index.xml%7d" rel="alternate" type="application/rss+xml" title="我坦白~" />
+<link rel="canonical" href="https://simpleowen.github.io/post/basic_authorization_github/" />
 
 
 
@@ -57,19 +57,27 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://simpleowen.github.io/post/" />
+<meta property="og:title" content="Github 基本认证" />
+<meta property="og:description" content="通过 Github API v3 进行认证的方式有 2 类 Basic authentication Username and Password Personal Access Token OAuth2 OAuth2 token (sent in a header) OAuth2 key/secret 这 3 种认证方式的认证格式如下: 1 2 3 curl -u &#34;username&#34; https://api.github.com curl -H &#34;Authorization: token OAUTH-TOKEN&#34; https://api.github.com curl &#39;https://api.github.com/users/whatever?client_id=xxxx&amp;client_secret=yyyy&#39; 本文只介绍 Github 的基" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simpleowen.github.io/post/basic_authorization_github/" />
+<meta property="article:published_time" content="2019-06-19T01:39:24-04:00"/>
+<meta property="article:modified_time" content="2019-06-19T01:39:24-04:00"/>
 
-<meta property="og:updated_time" content="2019-06-19T01:39:24-04:00"/>
+<meta itemprop="name" content="Github 基本认证">
+<meta itemprop="description" content="通过 Github API v3 进行认证的方式有 2 类 Basic authentication Username and Password Personal Access Token OAuth2 OAuth2 token (sent in a header) OAuth2 key/secret 这 3 种认证方式的认证格式如下: 1 2 3 curl -u &#34;username&#34; https://api.github.com curl -H &#34;Authorization: token OAUTH-TOKEN&#34; https://api.github.com curl &#39;https://api.github.com/users/whatever?client_id=xxxx&amp;client_secret=yyyy&#39; 本文只介绍 Github 的基">
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-06-19T01:39:24-04:00" />
+<meta itemprop="dateModified" content="2019-06-19T01:39:24-04:00" />
+<meta itemprop="wordCount" content="236">
+
+
+
+<meta itemprop="keywords" content="github,认证," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="Github 基本认证"/>
+<meta name="twitter:description" content="通过 Github API v3 进行认证的方式有 2 类 Basic authentication Username and Password Personal Access Token OAuth2 OAuth2 token (sent in a header) OAuth2 key/secret 这 3 种认证方式的认证格式如下: 1 2 3 curl -u &#34;username&#34; https://api.github.com curl -H &#34;Authorization: token OAUTH-TOKEN&#34; https://api.github.com curl &#39;https://api.github.com/users/whatever?client_id=xxxx&amp;client_secret=yyyy&#39; 本文只介绍 Github 的基"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -266,177 +274,192 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
-    <div class="archive-title">
-      <span class="archive-post-counter">
-          13 posts In Total
-      </span>
-    </div>
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2019</h2>
+    <header class="post-header">
+      <h1 class="post-title">Github 基本认证</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-06-19" class="post-time">
+          2019-06-19
+        </time>
+        
+        <span class="more-meta"> 236 words </span>
+          <span class="more-meta"> 1 min read </span>
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2019-06-19" class="archive-post-time">
-        2019-06-19
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/basic_authorization_github/" class="archive-post-link">
-          Github 基本认证
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2019-06-18" class="archive-post-time">
-        2019-06-18
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/shell_intro/" class="archive-post-link">
-          Shell 初步
-        </a>
-      </span>
-    </div>
     
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#通过-用户名-和-密码">通过 用户名 和 密码</a></li>
+<li><a href="#通过-oauth-令牌-oauth-tokens">通过 OAuth 令牌 (OAuth Tokens)</a></li>
+<li><a href="#链接">链接</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
 
-    <div class="archive-post">
-      <time datetime="2019-06-07" class="archive-post-time">
-        2019-06-07
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/postgresql_ops/" class="archive-post-link">
-          PostgreSQL 常用命令
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/toolbox/" class="archive-post-link">
-          我的工具箱
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/golang_io/" class="archive-post-link">
-          [译] golang 中的 io 流
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/es_installation_on_linux/" class="archive-post-link">
-          在 Linux 下安装 Elasticsearch
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/pandoc2slides/" class="archive-post-link">
-          使用 Pandoc 将 markdown 文档生成幻灯片
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/heroku_golang_deploy/" class="archive-post-link">
-          将 Golang 程序部署到 Heroku
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/golang_usefull_links/" class="archive-post-link">
-          Usefull Go Links
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-05-29" class="archive-post-time">
-        2019-05-29
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/go_mod/" class="archive-post-link">
-          常用 golang.org 镜像包
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
+    <div class="post-content">
       
-      <li  class="active" >
-        <a href="/post/">1</a>
-      </li>
+
+<p>通过 Github API v3 进行认证的方式有 2 类</p>
+
+<ul>
+<li>Basic authentication
+
+<ul>
+<li>Username and Password</li>
+<li>Personal Access Token</li>
+</ul></li>
+<li>OAuth2
+
+<ul>
+<li>OAuth2 token (sent in a header)</li>
+<li>OAuth2 key/secret</li>
+</ul></li>
+</ul>
+
+<p>这 3 种认证方式的认证格式如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">curl -u &#34;username&#34; https://api.github.com
+curl -H &#34;Authorization: token OAUTH-TOKEN&#34; https://api.github.com
+curl &#39;https://api.github.com/users/whatever?client_id=xxxx&amp;client_secret=yyyy&#39;</pre></td></tr></table>
+</div>
+</div>
+<p>本文只介绍 Github 的基本认证 (Basic authentication), 尽管如此, Github 官方强烈建议用户使用 <a href="https://developer.github.com/apps/building-oauth-apps/">OAuth</a> 进行生产环境的认证</p>
+
+<p>Github 基本认证实现了 RFC2617 标准, 只在返回未经认证的请求时略有差异. RFC2617 要求返回 401 Unauthorized, 但 Github API v3 返回 404 Not Found</p>
+
+<p>可通过 2 种方式进行 GitHub 基本认证</p>
+
+<h2 id="通过-用户名-和-密码">通过 用户名 和 密码</h2>
+
+<blockquote>
+<p>curl -u username <a href="https://api.github.com/user">https://api.github.com/user</a></p>
+</blockquote>
+
+<p>这样访问, curl 会提示输入密码</p>
+
+<h2 id="通过-oauth-令牌-oauth-tokens">通过 OAuth 令牌 (OAuth Tokens)</h2>
+
+<blockquote>
+<p>curl -u username:token <a href="https://api.github.com/user">https://api.github.com/user</a></p>
+</blockquote>
+
+<p>使用 <a href="https://github.blog/2013-05-16-personal-api-tokens/">personal access tokens</a> 或 OAuth 令牌代替密码也是方案之一</p>
+
+<h2 id="链接">链接</h2>
+
+<ul>
+<li><a href="https://developer.github.com/v3/#authentication">GitHub API v3 Authentication</a></li>
+<li><a href="https://developer.github.com/v3/guides/basics-of-authentication/">Basics of Authentication | GitHub Developer Guide</a></li>
+<li><a href="https://developer.github.com/v3/auth/#other-authentication-methods">Other Authentication Methods | GitHub Developer Guide</a></li>
+<li><a href="https://www.ietf.org/rfc/rfc2617.txt">rfc2617</a></li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">damao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2019-06-19</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://simpleowen.github.io/tags/github/">github</a>
+          <a href="https://simpleowen.github.io/tags/%E8%AE%A4%E8%AF%81/">认证</a>
+          
+        </div>
+
       
-      <li >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/shell_intro/">
+            <span class="next-text nav-default">Shell 初步</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+  
+  
 
   
   
 
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "simpleowen/comments4blog"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
+  
 
+  
+
+  
+
+    
 
         </div>
       </div>
