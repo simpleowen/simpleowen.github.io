@@ -1,2 +1,1 @@
 User-agent: *
-Sitemap: https://simpleowen.github.io/sitemap.xml
