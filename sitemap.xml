@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simpleowen.github.io/post/excel2markdowntable/</loc>
+    <lastmod>2019-06-21T10:24:14-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/markdown/</loc>
+    <lastmod>2019-06-21T10:24:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simpleowen.github.io/post/</loc>
-    <lastmod>2019-06-21T01:32:14-04:00</lastmod>
+    <lastmod>2019-06-21T10:24:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/</loc>
+    <lastmod>2019-06-21T10:24:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/</loc>
+    <lastmod>2019-06-21T10:24:14-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,22 +46,10 @@
   </url>
   
   <url>
-    <loc>https://simpleowen.github.io/tags/</loc>
-    <lastmod>2019-06-21T01:32:14-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://simpleowen.github.io/post/rss_in_slack/</loc>
     <lastmod>2019-06-21T01:32:14-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://simpleowen.github.io/</loc>
-    <lastmod>2019-06-21T01:32:14-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

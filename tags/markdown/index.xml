@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Jun 2019 10:24:14 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Excel/GoogleSheet 转化成 Markdown 表格 </title>
+      <link>https://simpleowen.github.io/post/excel2markdowntable/</link>
+      <pubDate>Fri, 21 Jun 2019 10:24:14 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/excel2markdowntable/</guid>
+      <description>网络上提供这种转换操作的服务还挺常见. GoogleSheet Add-ons G Suite Marketplace 有一个名为 MarkdownTableMaker 的附加服务能方便将 Sheet 格子转换成 Markdown Table MarkdownTableMaker - G Suite Marketplace 在线服务 以下服务都可将 Excel/GoogleSheet 格子转换成 Markdown</description>
+    </item>
+    
+  </channel>
+</rss>
