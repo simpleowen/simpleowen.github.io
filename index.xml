@@ -6,10 +6,48 @@
     <description>Recent content on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Jun 2019 01:39:24 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jun 2019 01:32:14 -0400</lastBuildDate>
     
         <atom:link href="https://simpleowen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在 Slack 中订阅 Feeds</title>
+      <link>https://simpleowen.github.io/post/rss_in_slack/</link>
+      <pubDate>Fri, 21 Jun 2019 01:32:14 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/rss_in_slack/</guid>
+      
+        <description>
+
+&lt;p&gt;经常打开 Slack, 如果能将 feeds 也集成到 Slack, 就能减少一些 APP 切换成本.&lt;/p&gt;
+
+&lt;h2 id=&#34;前提&#34;&gt;前提&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slack 已登录&lt;/li&gt;
+&lt;li&gt;已知 Feed URL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;集成&#34;&gt;集成&lt;/h2&gt;
+
+&lt;p&gt;Slack 为 &lt;code&gt;WorkSpace&lt;/code&gt; 提供了 RSS APP, 可以订阅各类 &lt;code&gt;feeds&lt;/code&gt;. RSS 会发送订阅内容到配置的 &lt;code&gt;channel&lt;/code&gt; 或 &lt;code&gt;user&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;所以开始集成前, 你需要做一个小小的规划:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;是否新建一个 &lt;code&gt;workspace&lt;/code&gt; 来接收订阅内容?&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;channel&lt;/code&gt; 来接收还是直接推送到 &lt;code&gt;user&lt;/code&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;确定好以后, 在 &lt;code&gt;workspace&lt;/code&gt; 界面单击 &lt;code&gt;Add apps&lt;/code&gt;, 输入 &lt;code&gt;RSS&lt;/code&gt; 检索相关的 APP, 找到 &lt;code&gt;RSS&lt;/code&gt; APP 后, 单击 &lt;code&gt;INSTALL&lt;/code&gt; 将 APP 添加到 Slack.&lt;/p&gt;
+
+&lt;p&gt;此后, 就可以将 &lt;code&gt;Feed URL&lt;/code&gt; 添加到 RSS APP 中, 并设置 &lt;code&gt;Post to Channel&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;这样就可以在 Slack 对话窗口中接收 Feeds 了.&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>Github 基本认证</title>
