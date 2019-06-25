@@ -1,5 +1,8 @@
 # 目录
 
+- [Shell 初步](https://simpleowen.github.io/post/shell_intro/)
+- [Github 基本认证](https://simpleowen.github.io/post/basic_authorization_github/)
+- [Excel/GoogleSheet 转化成 Markdown 表格](https://simpleowen.github.io/post/excel2markdowntable/)
 - [在 Slack 中订阅 Feeds](https://simpleowen.github.io/post/rss_in_slack/)
 - [PostgreSQL 常用命令](https://simpleowen.github.io/post/postgresql_ops/)
 - [[译]go-database-sql-tutorial](https://github.com/simpleowen/go-database-sql-tutorial-cn)
