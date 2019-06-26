@@ -16,6 +16,12 @@
   </url>
   
   <url>
+    <loc>https://simpleowen.github.io/tags/present/</loc>
+    <lastmod>2019-06-26T02:18:26-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simpleowen.github.io/tags/</loc>
     <lastmod>2019-06-26T02:18:26-04:00</lastmod>
     <priority>0</priority>
@@ -28,15 +34,28 @@
   </url>
   
   <url>
-    <loc>https://simpleowen.github.io/tags/present/</loc>
+    <loc>https://simpleowen.github.io/</loc>
     <lastmod>2019-06-26T02:18:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simpleowen.github.io/</loc>
-    <lastmod>2019-06-26T02:18:26-04:00</lastmod>
+    <loc>https://simpleowen.github.io/tags/talks/</loc>
+    <lastmod>2019-06-26T01:46:37-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/slide/</loc>
+    <lastmod>2019-06-26T01:46:37-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/post/gopher_slide/</loc>
+    <lastmod>2019-06-26T01:46:37-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -199,12 +218,6 @@
   
   <url>
     <loc>https://simpleowen.github.io/tags/reveal.js/</loc>
-    <lastmod>2019-05-29T12:25:55-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://simpleowen.github.io/tags/slide/</loc>
     <lastmod>2019-05-29T12:25:55-04:00</lastmod>
     <priority>0</priority>
   </url>

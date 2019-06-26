@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/talks/</link>
+    <description>Recent content in Talks on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2019 01:46:37 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何制作一篇 Gopher 风格的 slide</title>
+      <link>https://simpleowen.github.io/post/gopher_slide/</link>
+      <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/gopher_slide/</guid>
+      <description>制作一篇 Gopher 风格的 slide, 没有其他要求, 只需要将幻灯片放在你的 Github 仓库即可. 当然, 此幻灯片需要满足某些格式, 这就是 present. Present 文件格式 封面幻灯 第一个非空白, 非</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Present</title>
+      <link>https://simpleowen.github.io/tags/present/</link>
+      <pubDate>Wed, 26 Jun 2019 02:18:26 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/present/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>go install</title>
       <link>https://simpleowen.github.io/tags/go-install/</link>
       <pubDate>Wed, 26 Jun 2019 02:18:26 -0400</pubDate>
@@ -21,11 +30,20 @@
     </item>
     
     <item>
-      <title>present</title>
-      <link>https://simpleowen.github.io/tags/present/</link>
-      <pubDate>Wed, 26 Jun 2019 02:18:26 -0400</pubDate>
+      <title>Talks</title>
+      <link>https://simpleowen.github.io/tags/talks/</link>
+      <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
       
-      <guid>https://simpleowen.github.io/tags/present/</guid>
+      <guid>https://simpleowen.github.io/tags/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slide</title>
+      <link>https://simpleowen.github.io/tags/slide/</link>
+      <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/slide/</guid>
       <description></description>
     </item>
     
@@ -170,24 +188,6 @@
       <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
       
       <guid>https://simpleowen.github.io/tags/%E5%AE%89%E8%A3%85/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pandoc</title>
-      <link>https://simpleowen.github.io/tags/pandoc/</link>
-      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/pandoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reveal.js</title>
-      <link>https://simpleowen.github.io/tags/reveal.js/</link>
-      <pubDate>Wed, 29 May 2019 12:25:55 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/reveal.js/</guid>
       <description></description>
     </item>
     

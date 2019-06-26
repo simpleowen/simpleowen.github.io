@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>如何制作一篇 Gopher 风格的 slide</title>
+      <link>https://simpleowen.github.io/post/gopher_slide/</link>
+      <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/gopher_slide/</guid>
+      <description>制作一篇 Gopher 风格的 slide, 没有其他要求, 只需要将幻灯片放在你的 Github 仓库即可. 当然, 此幻灯片需要满足某些格式, 这就是 present. Present 文件格式 封面幻灯 第一个非空白, 非</description>
+    </item>
+    
+    <item>
       <title>Excel/GoogleSheet 转化成 Markdown 表格 </title>
       <link>https://simpleowen.github.io/post/excel2markdowntable/</link>
       <pubDate>Fri, 21 Jun 2019 10:24:14 -0400</pubDate>

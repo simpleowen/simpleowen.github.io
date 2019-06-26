@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="damao" />
+  <meta property="og:url" content="https://simpleowen.github.io/post/gopher_slide/" />
+  <link rel="canonical" href="https://simpleowen.github.io/post/gopher_slide/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/simpleowen.github.io\/"
+      },
+      "articleSection" : "post",
+      "name" : "如何制作一篇 Gopher 风格的 slide",
+      "headline" : "如何制作一篇 Gopher 风格的 slide",
+      "description" : "制作一篇 Gopher 风格的 slide, 没有其他要求, 只需要将幻灯片放在你的 Github 仓库即可. 当然, 此幻灯片需要满足某些格式, 这就是 present. Present 文件格式 封面幻灯 第一个非空白, 非",
+      "inLanguage" : "en-US",
+      "author" : "damao",
+      "creator" : "damao",
+      "publisher": "damao",
+      "accountablePerson" : "damao",
+      "copyrightHolder" : "damao",
+      "copyrightYear" : "2019",
+      "datePublished": "2019-06-26 01:46:37 -0400 EDT",
+      "dateModified" : "2019-06-26 01:46:37 -0400 EDT",
+      "url" : "https:\/\/simpleowen.github.io\/post\/gopher_slide\/",
+      "keywords" : [ "Slide","Present","Talks", ]
+  }
+</script>
+<title>如何制作一篇 Gopher 风格的 slide - 我坦白~</title>
+  <meta property="og:title" content="如何制作一篇 Gopher 风格的 slide - 我坦白~" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="制作一篇 Gopher 风格的 slide, 没有其他要求, 只需要将幻灯片放在你的 Github 仓库即可. 当然, 此幻灯片需要满足某些格式, 这就是 present. Present 文件格式 封面幻灯 第一个非空白, 非" />
+
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="我坦白~">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker" rel="stylesheet">
+  
+  <script>
+    
+
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">damao</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">如何制作一篇 Gopher 风格的 slide</h1>
+          <div class="row">
+            <div class="col-xs-6">
+              <time class="post-date" datetime="2019-06-26 01:46:37 EDT">
+                26, Jun, 2019
+              </time>
+            </div>
+            <div class="col-xs-6">
+              <div class="post-author">
+                <a target="_blank" href="">@damao</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content markdown-body">
+          
+
+<p>制作一篇 Gopher 风格的 slide, 没有其他要求, 只需要将幻灯片放在你的 Github 仓库即可.</p>
+
+<p>当然, 此幻灯片需要满足某些格式, 这就是 <a href="https://godoc.org/golang.org/x/tools/present">present</a>.</p>
+
+<h2 id="present-文件格式">Present 文件格式</h2>
+
+<h3 id="封面幻灯">封面幻灯</h3>
+
+<p>第一个非空白, 非注释行是标题</p>
+
+<p>头文件如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">这是标题
+这是子标题
+25 Jun 2019
+Tags: foo, bar, baz
+
+damao
+Engineer
+deardamao@gmail.com
+[[https://github.com/simpleowen][simpleowen]]</pre></td></tr></table>
+</div>
+</div>
+<p>子标题行, 日期时间行, 标签行都是可选的.</p>
+
+<p>日期时间行可以省略时间只剩日期 <code>25 Jun 2019</code>, 这种情况下, 时间将被解释为此日期的 UTC  时间上午 10 点.</p>
+
+<p>标签行以逗号分隔</p>
+
+<p>作者部分可以是姓名, 头衔, 公司, 链接的混合.</p>
+
+<p>空行分隔多个作者</p>
+
+<h3 id="演示内容">演示内容</h3>
+
+<p>接下来制作幻灯片的内容</p>
+
+<p>每个幻灯片都以空行分隔</p>
+
+<p>幻灯片的每一部分也以空行分隔</p>
+
+<p>以 # 开头的行是注释</p>
+
+<ul>
+<li>内联链接</li>
+</ul>
+
+<p>链接可以包含在[[url][label]]或[[url]]形式的任何文本中，以使用URL本身作为标签</p>
+
+<h4 id="模板函数">模板函数</h4>
+
+<p>模板函数以 <code>点+函数名+若干参数</code> 开头.</p>
+
+<p>以下是一些函数功能描述:</p>
+
+<ul>
+<li>代码</li>
+</ul>
+
+<p>插入代码块</p>
+
+<p>-edit 选项: 可编辑</p>
+
+<blockquote>
+<p>.code -edit test.go</p>
+</blockquote>
+
+<p>-numbers 选项: 显示行号</p>
+
+<blockquote>
+<p>.code -numbers test.go</p>
+</blockquote>
+
+<ul>
+<li>play</li>
+</ul>
+
+<p>play 与 code 类似, 但是多了一个按钮在界面上, 可以在浏览器中运行代码并输出结果.</p>
+
+<ul>
+<li>超链接</li>
+</ul>
+
+<blockquote>
+<p>.link <a href="http://golang.org">http://golang.org</a> golang.org</p>
+</blockquote>
+
+<p>创建一个超链接, 可带 1 到 2 个以 <code>空格</code> 分隔的参数, 第一个参数一般是 <code>HTTP URL</code>, 第二个参数是链接的显示文本.</p>
+
+<ul>
+<li>图片</li>
+</ul>
+
+<p>插入图片</p>
+
+<blockquote>
+<p>.image images/betsy.jpg 100 200</p>
+</blockquote>
+
+<p>可带 1 到 3 个以 <code>空格</code> 分隔的参数, 第一个参数一般是图片文件名, 如果有更多参数, 它们是高度和宽度, 这两个参数必须同时存在, 或以下划线代替</p>
+
+<blockquote>
+<p>.image images/janet.jpg _ 300</p>
+</blockquote>
+
+<ul>
+<li>视频</li>
+</ul>
+
+<p>插入视频</p>
+
+<p>2 到 4 个以 <code>空格</code> 分隔的参数, 第一个参数是视频文件名, 第二个参数是文件内容类型, 如果有更多参数, 它们是高度和宽度, 这两个参数必须同时存在, 或以下划线代替.</p>
+
+<blockquote>
+<p>.video videos/evangeline.mp4 video/mp4 400 600</p>
+
+<p>.video videos/mabel.ogg video/ogg 500 _</p>
+</blockquote>
+
+<ul>
+<li>背景</li>
+</ul>
+
+<blockquote>
+<p>.background images/pic.jpg</p>
+</blockquote>
+
+<ul>
+<li>字幕</li>
+</ul>
+
+<blockquote>
+<p>.caption</p>
+</blockquote>
+
+<ul>
+<li>嵌入页面</li>
+</ul>
+
+<p>iframe 表示页中页. 语法与 image 语法一样.</p>
+
+<blockquote>
+<p>.iframe index.html 100 200</p>
+</blockquote>
+
+<ul>
+<li>html</li>
+</ul>
+
+<blockquote>
+<p>.html file.html</p>
+</blockquote>
+
+<p>展示未转义的 html 内容</p>
+
+<ul>
+<li>演示备注</li>
+</ul>
+
+<p>运行 present 格式文件时, 添加 <code>-notes</code> 选项可以启用演示备注.</p>
+
+<p>你可以在显示幻灯片的浏览器窗口中按下 N 键来开启第二个窗口.</p>
+
+<p>第二个窗口与第一个窗口是完全同步的, 演示备注只会显示在第二个窗口中.</p>
+
+<p>以冒号开头的行是演示备注.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">* Title of slide
+
+Some Text
+
+: Presenter notes (first paragraph)
+: Presenter notes (subsequent paragraph(s))</pre></td></tr></table>
+</div>
+</div>
+<p>演示备注可以出现在演示文稿的任何地方.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">* Title of slide
+
+: Presenter notes (first paragraph)
+
+Some Text
+
+: Presenter notes (subsequent paragraph(s))</pre></td></tr></table>
+</div>
+</div>
+<h2 id="本地调试幻灯片">本地调试幻灯片</h2>
+
+<p>运行 <code>present</code> 命令, 打开 <code>http://127.0.0.1:3999</code> 查看效果.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">➜ ~ present
+2019/06/26 10:46:41 Open your web browser and visit http://127.0.0.1:3999</pre></td></tr></table>
+</div>
+</div>
+<h2 id="present-everywhere">Present Everywhere</h2>
+
+<ul>
+<li>推送 slide 到 github 仓库</li>
+<li>将 slide 在 github 仓库的路径加到 <code>https://talks.godoc.org</code> 路径后面</li>
+<li><a href="https://talks.godoc.org/github.com/simpleowen/simpleowen.github.io/gopher_ppt.slide">https://talks.godoc.org/github.com/simpleowen/simpleowen.github.io/gopher_ppt.slide</a></li>
+</ul>
+
+<h2 id="ref">Ref</h2>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=83JBmS8WpHM">go present - create html slides with extractable, executable go code - YouTube</a></li>
+<li><a href="https://godoc.org/golang.org/x/tools/present">present - GoDoc</a></li>
+<li><a href="https://hxzqlh.com/2018/03/28/Gopher-slide/">Gopher 做 PPT 的正确姿势 | 不忘痴心 砥砺前行</a></li>
+<li><a href="https://bingohuang.com/go-present/">用 Go 写 Web PPT - Go Present</a></li>
+<li><a href="https://starhx.com/2016/05/10/golang-slide-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/">golang .slide 下载安装与使用 | 苏格拉没有底</a></li>
+</ul>
+
+        </div>
+        
+        
+        
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="https://github.com/joway/hugo-theme-yinyang" target="_blank">Theme</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  
+
+</body>
+
+</html>
