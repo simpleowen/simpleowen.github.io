@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PostgreSQL 常用命令 - 我坦白~</title>
+  <title>Markdown · 我坦白~</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,8 +23,6 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="damao" />
-  <meta name="description" content="查看当前主机 PostgreSQL 安装路径及版本 which psql psql &amp;ndash;version 修改 postgres 系统用户密码 sudo passwd -d postgres sudo -u postgres passwd 查看当前连接信息 \conninfo 列出所有用户(角色) \du 列出所有数据库 \l or \list 切换数据库" />
-
 
 
 
@@ -34,7 +32,8 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://simpleowen.github.io/post/postgresql_ops/" />
+<link rel="canonical" href="https://simpleowen.github.io/tags/markdown/" />
+<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/tags/markdown/index.xml%20https://simpleowen.github.io/tags/markdown/index.xml%7d" rel="alternate" type="application/rss+xml" title="我坦白~" />
 
 
 
@@ -56,27 +55,19 @@
 
 
 
-<meta property="og:title" content="PostgreSQL 常用命令" />
-<meta property="og:description" content="查看当前主机 PostgreSQL 安装路径及版本 which psql psql &ndash;version 修改 postgres 系统用户密码 sudo passwd -d postgres sudo -u postgres passwd 查看当前连接信息 \conninfo 列出所有用户(角色) \du 列出所有数据库 \l or \list 切换数据库" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://simpleowen.github.io/post/postgresql_ops/" />
-<meta property="article:published_time" content="2019-06-07T10:35:25-04:00"/>
-<meta property="article:modified_time" content="2019-06-07T10:35:25-04:00"/>
+<meta property="og:title" content="Markdown" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://simpleowen.github.io/tags/markdown/" />
 
-<meta itemprop="name" content="PostgreSQL 常用命令">
-<meta itemprop="description" content="查看当前主机 PostgreSQL 安装路径及版本 which psql psql &ndash;version 修改 postgres 系统用户密码 sudo passwd -d postgres sudo -u postgres passwd 查看当前连接信息 \conninfo 列出所有用户(角色) \du 列出所有数据库 \l or \list 切换数据库">
+<meta property="og:updated_time" content="2019-06-21T10:24:14-04:00"/>
 
+<meta itemprop="name" content="Markdown">
+<meta itemprop="description" content="">
 
-<meta itemprop="datePublished" content="2019-06-07T10:35:25-04:00" />
-<meta itemprop="dateModified" content="2019-06-07T10:35:25-04:00" />
-<meta itemprop="wordCount" content="415">
-
-
-
-<meta itemprop="keywords" content="PostgreSQL,Database," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="PostgreSQL 常用命令"/>
-<meta name="twitter:description" content="查看当前主机 PostgreSQL 安装路径及版本 which psql psql &ndash;version 修改 postgres 系统用户密码 sudo passwd -d postgres sudo -u postgres passwd 查看当前连接信息 \conninfo 列出所有用户(角色) \du 列出所有数据库 \l or \list 切换数据库"/>
+<meta name="twitter:title" content="Markdown"/>
+<meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -273,291 +264,55 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          <article class="post bg-white">
-    
-    <header class="post-header">
-      <h1 class="post-title">PostgreSQL 常用命令</h1>
-      
-      <div class="post-meta">
-        <time datetime="2019-06-07" class="post-time">
-          2019-06-07
-        </time>
-        
-        <span class="more-meta"> 415 words </span>
-          <span class="more-meta"> 1 min read </span>
-
-        
-        
-
-        
-        
-      </div>
-    </header>
-
-    
-    
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Table of Contents</h2>
-  <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#查看当前主机-postgresql-安装路径及版本">查看当前主机 PostgreSQL 安装路径及版本</a></li>
-<li><a href="#修改-postgres-系统用户密码">修改 postgres 系统用户密码</a></li>
-<li><a href="#查看当前连接信息">查看当前连接信息</a></li>
-<li><a href="#列出所有用户-角色">列出所有用户(角色)</a></li>
-<li><a href="#列出所有数据库">列出所有数据库</a></li>
-<li><a href="#切换数据库">切换数据库</a></li>
-<li><a href="#重命名数据库">重命名数据库</a></li>
-<li><a href="#删除数据库">删除数据库</a></li>
-<li><a href="#新建用户">新建用户</a></li>
-<li><a href="#删除用户">删除用户</a></li>
-<li><a href="#修改密码">修改密码</a></li>
-<li><a href="#新建数据库">新建数据库</a></li>
-<li><a href="#修改数据库所有者">修改数据库所有者</a></li>
-<li><a href="#授权用户">授权用户</a></li>
-<li><a href="#如何连接远程数据库">如何连接远程数据库</a></li>
-<li><a href="#链接">链接</a></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-</div>
-
-    
-    <div class="post-content">
-      
-
-<h2 id="查看当前主机-postgresql-安装路径及版本">查看当前主机 PostgreSQL 安装路径及版本</h2>
-
-<ul>
-<li>which psql</li>
-<li>psql &ndash;version</li>
-</ul>
-
-<h2 id="修改-postgres-系统用户密码">修改 postgres 系统用户密码</h2>
-
-<ul>
-<li>sudo passwd -d postgres</li>
-<li>sudo -u postgres passwd</li>
-</ul>
-
-<h2 id="查看当前连接信息">查看当前连接信息</h2>
-
-<ul>
-<li>\conninfo</li>
-</ul>
-
-<h2 id="列出所有用户-角色">列出所有用户(角色)</h2>
-
-<ul>
-<li>\du</li>
-</ul>
-
-<h2 id="列出所有数据库">列出所有数据库</h2>
-
-<ul>
-<li>\l or \list</li>
-</ul>
-
-<h2 id="切换数据库">切换数据库</h2>
-
-<ul>
-<li>\c database or \connect database</li>
-</ul>
-
-<h2 id="重命名数据库">重命名数据库</h2>
-
-<ul>
-<li>切换到不需要重命名的数据库</li>
-<li>alter database old_dbname rename to new_dbname;</li>
-</ul>
-
-<h2 id="删除数据库">删除数据库</h2>
-
-<ul>
-<li>drop database dbname;</li>
-</ul>
-
-<h2 id="新建用户">新建用户</h2>
-
-<ul>
-<li>CREATE USER username WITH PASSWORD &lsquo;password&rsquo; CREATEDB;</li>
-</ul>
-
-<h2 id="删除用户">删除用户</h2>
-
-<ul>
-<li>DROP USER username</li>
-</ul>
-
-<h2 id="修改密码">修改密码</h2>
-
-<ul>
-<li>\password username</li>
-</ul>
-
-<h2 id="新建数据库">新建数据库</h2>
-
-<ul>
-<li>CREATE DATABASE dbname OWNER username;</li>
-</ul>
-
-<h2 id="修改数据库所有者">修改数据库所有者</h2>
-
-<ul>
-<li>alter database dbname owner to username;</li>
-</ul>
-
-<h2 id="授权用户">授权用户</h2>
-
-<ul>
-<li>GRANT ALL PRIVILEGES ON DATABASE &ldquo;dbname&rdquo; to username;</li>
-</ul>
-
-<h2 id="如何连接远程数据库">如何连接远程数据库</h2>
-
-<ul>
-<li>su - postgres</li>
-<li>cd /etc/postgresql/10/main</li>
-</ul>
-
-<p>修改两个配置文件</p>
-
-<ul>
-<li>postgresql.conf
-
-<ul>
-<li>监听地址改为任意地址: <code>listen_addresses = '*'</code></li>
-</ul></li>
-<li>pg_hba.conf
-
-<ul>
-<li>接受任意地址的密码验证: 增加一行 -&gt; <code>host  all  all 0.0.0.0/0 md5</code></li>
-</ul></li>
-<li>重启服务
-
-<ul>
-<li>su - superuser</li>
-<li>sudo service postgresql restart</li>
-</ul></li>
-</ul>
-
-<h2 id="链接">链接</h2>
-
-<ul>
-<li><a href="http://landcareweb.com/questions/10972/ru-he-tong-guo-linuxjiao-ben-jian-cha-shi-fou-an-zhuang-liao-postgresql">如何通过Linux脚本检查是否安装了PostgreSQL？ | landcareweb.com</a></li>
-<li><a href="https://www.cnblogs.com/kaituorensheng/p/4735191.html">修改postgres密码 - jihite - 博客园</a></li>
-<li><a href="https://www.liquidweb.com/kb/listing-switching-databases-postgresql/">Listing and Switching Databases in PostgreSQL | Liquid Web</a></li>
-<li><a href="https://www.a2hosting.com/kb/developer-corner/postgresql/renaming-a-postgresql-database">How to rename a PostgreSQL database</a></li>
-<li><a href="http://www.postgresqltutorial.com/postgresql-drop-database/">PostgreSQL DROP DATABASE - Delete PostgreSQL Databases</a></li>
-<li><a href="https://www.postgresql.org/docs/10/sql-createuser.html">PostgreSQL: Documentation: 8.0: CREATE USER</a></li>
-<li><a href="https://enterprise.arcgis.com/en/server/10.3/cloud/amazon/change-default-database-passwords-on-linux.htm">Change default PostgreSQL passwords—Documentation (10.3 and 10.3.1) | ArcGIS Enterprise</a></li>
-<li><a href="https://www.postgresql.org/docs/10/sql-createdatabase.html">PostgreSQL: Documentation: 9.0: CREATE DATABASE</a></li>
-<li><a href="https://www.guru99.com/postgresql-create-database.html">PostgreSQL CREATE DATABASE with Example</a></li>
-<li><a href="https://stackoverflow.com/questions/22483555/give-all-the-permissions-to-a-user-on-a-db">postgresql - Give all the permissions to a user on a DB - Stack Overflow</a></li>
-<li><a href="https://tableplus.io/blog/2018/04/postgresql-how-to-grant-access-to-users.html">PostgreSQL - How to grant access to users? | TablePlus</a></li>
-<li><a href="https://www.postgresql.org/docs/10/sql-dropuser.html">PostgreSQL: Documentation: 9.4: DROP USER</a></li>
-<li><a href="https://www.postgresql.org/docs/10/sql-alterdatabase.html">PostgreSQL: Documentation: 9.1: ALTER DATABASE</a></li>
-<li><a href="http://lazybios.com/2016/11/how-to-make-postgreSQL-can-be-accessed-from-remote-client/">如何设置PostgreSQL允许被远程访问</a></li>
-</ul>
-
-    </div>
-
-    
-    
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Author</span>
-    <span class="item-content">damao</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">LastMod</span>
-    <span class="item-content">2019-06-07</span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">License</span>
-    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
-  </p>
-</div>
-
-
-    
-    
-
-    <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://simpleowen.github.io/tags/postgresql/">PostgreSQL</a>
-          <a href="https://simpleowen.github.io/tags/database/">Database</a>
           
-        </div>
 
-      
-      <nav class="post-nav">
-        
-          <a class="prev" href="/post/shell_intro/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Shell 初步</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        
-          <a class="next" href="/post/toolbox/">
-            <span class="next-text nav-default">我的工具箱</span>
-            <span class="prev-text nav-mobile">Next</span>
-            
-            <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
-</svg>
-
-            </i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-
+<section id="archive" class="archive">
   
-  
-  
+    
+      <div class="archive-title tag">
+        <h2 class="archive-name">Tag: Markdown</h2>
+      </div>
+    
   
 
   
-  
-
-  
-
-  
-  
-    <div class="post bg-white">
-      <script src="https://utteranc.es/client.js"
-            repo= "simpleowen/simpleowen.github.io"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-      </script>
+    <div class="archive-post">
+      <time datetime="2019-06-21" class="archive-post-time">
+        2019-06-21
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/excel2markdowntable/" class="archive-post-link">
+          Excel/GoogleSheet 转化成 Markdown 表格 
+        </a>
+      </span>
     </div>
   
+</section>
 
+
+
+
+
+
+  
+  
   
 
   
-
   
 
-    
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
 
         </div>
       </div>
