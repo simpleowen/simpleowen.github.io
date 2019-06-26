@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>present on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/present/</link>
+    <description>Recent content in present on 我坦白~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2019 02:18:26 -0400</lastBuildDate>
+    
+	<atom:link href="https://simpleowen.github.io/tags/present/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go install 安装 go 工具</title>
+      <link>https://simpleowen.github.io/post/go_install/</link>
+      <pubDate>Wed, 26 Jun 2019 02:18:26 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/go_install/</guid>
+      <description>安装好 go 后, 在命令行输入 go 命令会输出一系列 go 命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ➜ ~ go Go is a tool for managing Go source code. Usage: go &amp;lt;command&amp;gt; [arguments] The commands are: bug</description>
+    </item>
+    
+  </channel>
+</rss>

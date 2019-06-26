@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="damao" />
+  <meta property="og:url" content="https://simpleowen.github.io/post/go_install/" />
+  <link rel="canonical" href="https://simpleowen.github.io/post/go_install/" /><script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/simpleowen.github.io\/"
+      },
+      "articleSection" : "post",
+      "name" : "Go install 安装 go 工具",
+      "headline" : "Go install 安装 go 工具",
+      "description" : "安装好 go 后, 在命令行输入 go 命令会输出一系列 go 命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ➜ ~ go Go is a tool for managing Go source code. Usage: go \x26lt;command\x26gt; [arguments] The commands are: bug",
+      "inLanguage" : "en-US",
+      "author" : "damao",
+      "creator" : "damao",
+      "publisher": "damao",
+      "accountablePerson" : "damao",
+      "copyrightHolder" : "damao",
+      "copyrightYear" : "2019",
+      "datePublished": "2019-06-26 02:18:26 -0400 EDT",
+      "dateModified" : "2019-06-26 02:18:26 -0400 EDT",
+      "url" : "https:\/\/simpleowen.github.io\/post\/go_install\/",
+      "keywords" : [ "present","go install", ]
+  }
+</script>
+<title>Go install 安装 go 工具 - 我坦白~</title>
+  <meta property="og:title" content="Go install 安装 go 工具 - 我坦白~" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="安装好 go 后, 在命令行输入 go 命令会输出一系列 go 命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ➜ ~ go Go is a tool for managing Go source code. Usage: go &lt;command&gt; [arguments] The commands are: bug" />
+
+  <link rel="stylesheet" href="https://unpkg.com/flexboxgrid@6.3.1/dist/flexboxgrid.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow.min.css" />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="我坦白~">
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker" rel="stylesheet">
+  
+  <script>
+    
+
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+</head>
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="site-header">
+          
+<header>
+  <div class="signatures site-title">
+    <a href="/">damao</a>
+  </div>
+</header>
+<div class="row end-xs">
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">Go install 安装 go 工具</h1>
+          <div class="row">
+            <div class="col-xs-6">
+              <time class="post-date" datetime="2019-06-26 02:18:26 EDT">
+                26, Jun, 2019
+              </time>
+            </div>
+            <div class="col-xs-6">
+              <div class="post-author">
+                <a target="_blank" href="">@damao</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="post-content markdown-body">
+          
+
+<p>安装好 go 后, 在命令行输入 go 命令会输出一系列 go 命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ go
+Go is a tool <span class="k">for</span> managing Go <span class="nb">source</span> code.
+
+Usage:
+
+	go &lt;command&gt; <span class="o">[</span>arguments<span class="o">]</span>
+
+The commands are:
+
+	bug         start a bug report
+	build       compile packages and dependencies
+	clean       remove object files and cached files
+	doc         show documentation <span class="k">for</span> package or symbol
+	env         print Go environment information
+	fix         update packages to use new APIs
+	fmt         gofmt <span class="o">(</span>reformat<span class="o">)</span> package sources
+	generate    generate Go files by processing <span class="nb">source</span>
+	get         download and install packages and dependencies
+	install     compile and install packages and dependencies
+	list        list packages or modules
+	mod         module maintenance
+	run         compile and run Go program
+	<span class="nb">test</span>        <span class="nb">test</span> packages
+	tool        run specified go tool
+	version     print Go version
+	vet         report likely mistakes in packages</code></pre></td></tr></table>
+</div>
+</div>
+<p>go install 命令的功能是 <code>compile and install packages and dependencies</code>.</p>
+
+<p>它能将 <code>go package</code> 编译并生成可执行文件到 <code>$GOPATH/go/bin</code> 目录下, 将此目录添加到 <code>$PATH</code> 环境变量中, 就能通过命令行直接访问.</p>
+
+<p>以 <code>present</code> 为例:</p>
+
+<p>假设 <code>present</code> 包已下载到 <code>$GOPATH/go/src/golang.org/x/tools/cmd/</code> 目录下.</p>
+
+<p>在命令行运行:</p>
+
+<blockquote>
+<p>go install ~/go/src/golang.org/x/tools/cmd/present</p>
+</blockquote>
+
+<p>此后, <code>~/go/bin</code> 目录下多了一个名为 <code>present</code> 文件.</p>
+
+<p>由于 <code>~/go/bin</code> 目录已在 <code>$PATH</code> 中, 所以可以直接在命令运行 <code>present</code> 命令.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ present
+<span class="m">2019</span>/06/26 <span class="m">02</span>:09:36 Open your web browser and visit http://127.0.0.1:3999</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="ref">REF</h2>
+
+<ul>
+<li><a href="https://golang.org/cmd/go/#hdr-Compile_and_install_packages_and_dependencies">go install- The Go Programming Language</a></li>
+</ul>
+
+        </div>
+        
+        
+        
+        <div class="site-footer">
+  
+  <div class="site-footer-item">
+    <a href="https://github.com/joway/hugo-theme-yinyang" target="_blank">Theme</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  <script src="/js/highlight.pack.js"></script>
+<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+  
+  var posts = document.getElementById('posts-list');
+  posts && quicklink({
+    el: posts,
+    priority: true,
+  });
+</script>
+
+  
+
+</body>
+
+</html>
