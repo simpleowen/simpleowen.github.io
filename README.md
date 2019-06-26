@@ -1,5 +1,6 @@
 # 目录
 
+- [Go install 安装 go 工具](https://simpleowen.github.io/post/go_install/)
 - [Shell 初步](https://simpleowen.github.io/post/shell_intro/)
 - [Github 基本认证](https://simpleowen.github.io/post/basic_authorization_github/)
 - [Excel/GoogleSheet 转化成 Markdown 表格](https://simpleowen.github.io/post/excel2markdowntable/)
