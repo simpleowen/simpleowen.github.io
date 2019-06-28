@@ -362,6 +362,62 @@ Some Text
 &lt;li&gt;&lt;a href=&#34;https://talks.godoc.org/github.com/simpleowen/simpleowen.github.io/gopher_ppt.slide&#34;&gt;https://talks.godoc.org/github.com/simpleowen/simpleowen.github.io/gopher_ppt.slide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;待解决问题&#34;&gt;待解决问题&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;拒绝访问&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;.iframe https://www.zhihu.com/question/22478049 500 800&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;知乎返回: &lt;code&gt;www.zhihu.com refused to connect.&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;无法打开 html&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;.html https://www.zhihu.com/question/22471467&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;无法打开 html, 返回: &lt;code&gt;open https:/www.zhihu.com/question/22471467: no such file or directory&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;无法获取真实的视频地址&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;视频网址一般都提供 &lt;code&gt;复制视频网址&lt;/code&gt; 和 &lt;code&gt;复制视频通用代码&lt;/code&gt; 功能:&lt;/p&gt;
+
+&lt;p&gt;复制视频网址&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;https://v.youku.com/v_show/id_XMTYyNjYwMTcwOA==.html?from=s1.8-1-1.2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;复制视频通用代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;iframe height=498 width=510 src=&amp;#39;http://player.youku.com/embed/XMTYyNjYwMTcwOA==&amp;#39; frameborder=0 &amp;#39;allowfullscreen&amp;#39;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;但以上功能都无法获取视频真实地址, 无法通过 &lt;code&gt;.video&lt;/code&gt; 嵌入, 但是可通过 &lt;code&gt;.iframe&lt;/code&gt; 嵌入.&lt;/p&gt;
+
 &lt;h2 id=&#34;ref&#34;&gt;Ref&lt;/h2&gt;
 
 &lt;ul&gt;

@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-06-26T01:46:37-04:00" />
 <meta itemprop="dateModified" content="2019-06-26T01:46:37-04:00" />
-<meta itemprop="wordCount" content="966">
+<meta itemprop="wordCount" content="1107">
 
 
 
@@ -283,8 +283,8 @@
           2019-06-26
         </time>
         
-        <span class="more-meta"> 966 words </span>
-          <span class="more-meta"> 2 min read </span>
+        <span class="more-meta"> 1107 words </span>
+          <span class="more-meta"> 3 min read </span>
 
         
         
@@ -313,6 +313,7 @@
 </ul></li>
 <li><a href="#本地调试幻灯片">本地调试幻灯片</a></li>
 <li><a href="#present-everywhere">Present Everywhere</a></li>
+<li><a href="#待解决问题">待解决问题</a></li>
 <li><a href="#ref">Ref</a></li>
 </ul></li>
 </ul>
@@ -561,6 +562,62 @@ Some Text
 <li>将 slide 在 github 仓库的路径加到 <code>https://talks.godoc.org</code> 路径后面</li>
 <li><a href="https://talks.godoc.org/github.com/simpleowen/simpleowen.github.io/gopher_ppt.slide">https://talks.godoc.org/github.com/simpleowen/simpleowen.github.io/gopher_ppt.slide</a></li>
 </ul>
+
+<h2 id="待解决问题">待解决问题</h2>
+
+<ol>
+<li><p>拒绝访问</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">.iframe https://www.zhihu.com/question/22478049 500 800</pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+<p>知乎返回: <code>www.zhihu.com refused to connect.</code></p>
+
+<ol>
+<li><p>无法打开 html</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">.html https://www.zhihu.com/question/22471467</pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+<p>无法打开 html, 返回: <code>open https:/www.zhihu.com/question/22471467: no such file or directory</code></p>
+
+<ol>
+<li>无法获取真实的视频地址</li>
+</ol>
+
+<p>视频网址一般都提供 <code>复制视频网址</code> 和 <code>复制视频通用代码</code> 功能:</p>
+
+<p>复制视频网址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">https://v.youku.com/v_show/id_XMTYyNjYwMTcwOA==.html?from=s1.8-1-1.2</pre></td></tr></table>
+</div>
+</div>
+<p>复制视频通用代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;iframe height=498 width=510 src=&#39;http://player.youku.com/embed/XMTYyNjYwMTcwOA==&#39; frameborder=0 &#39;allowfullscreen&#39;&gt;&lt;/iframe&gt;</pre></td></tr></table>
+</div>
+</div>
+<p>但以上功能都无法获取视频真实地址, 无法通过 <code>.video</code> 嵌入, 但是可通过 <code>.iframe</code> 嵌入.</p>
 
 <h2 id="ref">Ref</h2>
 
