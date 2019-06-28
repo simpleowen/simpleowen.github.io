@@ -9,9 +9,10 @@ damao
 - trello
 - worktile
 - github issue
-- redmine
+- [[https://www.redmine.org/projects/redmine/wiki/Download][Redmine]]
 - 看板
 - scrum
+- [[https://www.atlassian.com/software/jira][Jira]]
 
 * 沟通工具
 
@@ -27,3 +28,25 @@ damao
 
 - 敏捷
 - OKR
+- Peer Review
+
+* 谷歌内部考核制度 OKR 是怎样的
+
+.iframe http://player.youku.com/embed/XMTYyNjYwMTcwOA== 600 800
+
+* Github Issue
+
+How We Organize GitHub Issues - A Styleguide For Tagging
+
+.iframe https://robinpowered.com/blog/best-practice-system-for-organizing-and-tagging-github-issues/ 600 800
+
+
+* 链接
+
+- [如何使用 Issue 管理软件项目？ - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2017/08/issue.html)
+- [什么是看板方法？ - 李淳 - 博客园](https://www.cnblogs.com/lchrennew/p/what-is-kanban.html)
+- [如何用github的issues来做日常工作管理 · Issue #13 · xxholly32/Blog](https://github.com/xxholly32/Blog/issues/13)
+- [看板管理 - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E7%9C%8B%E6%9D%BF%E7%AE%A1%E7%90%86)
+- [技术漫谈：为何KPI毁了索尼，而OKR却成就了谷歌？](https://www.infoq.cn/article/kpi-ruined-sony-while-okr-accomplished-google)
+- [3分钟理解OKR-生活-高清完整正版视频在线观看-优酷](https://v.youku.com/v_show/id_XMTYyNjYwMTcwOA==.html?from=s1.8-1-1.2)
+- [什么是 Peer Review？ - 知乎](https://www.zhihu.com/question/20784598)
