@@ -6,10 +6,37 @@
     <description>Recent content in Tags on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Jun 2019 02:18:26 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 22:03:45 -0400</lastBuildDate>
     
 	<atom:link href="https://simpleowen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go Language Server</title>
+      <link>https://simpleowen.github.io/tags/go-language-server/</link>
+      <pubDate>Sat, 20 Jul 2019 22:03:45 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/go-language-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LSP</title>
+      <link>https://simpleowen.github.io/tags/lsp/</link>
+      <pubDate>Sat, 20 Jul 2019 22:03:45 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/lsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://simpleowen.github.io/tags/vscode/</link>
+      <pubDate>Sat, 20 Jul 2019 22:03:45 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>go install</title>
@@ -161,33 +188,6 @@
       <pubDate>Wed, 29 May 2019 12:30:37 -0400</pubDate>
       
       <guid>https://simpleowen.github.io/tags/%E6%B5%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elasticsearch</title>
-      <link>https://simpleowen.github.io/tags/elasticsearch/</link>
-      <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/elasticsearch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://simpleowen.github.io/tags/linux/</link>
-      <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>安装</title>
-      <link>https://simpleowen.github.io/tags/%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Wed, 29 May 2019 12:28:17 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/%E5%AE%89%E8%A3%85/</guid>
       <description></description>
     </item>
     

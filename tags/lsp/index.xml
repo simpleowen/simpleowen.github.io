@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vscode on 我坦白~</title>
-    <link>https://simpleowen.github.io/tags/vscode/</link>
-    <description>Recent content in vscode on 我坦白~</description>
+    <title>LSP on 我坦白~</title>
+    <link>https://simpleowen.github.io/tags/lsp/</link>
+    <description>Recent content in LSP on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Jul 2019 22:03:45 -0400</lastBuildDate>
     
-	<atom:link href="https://simpleowen.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://simpleowen.github.io/tags/lsp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://simpleowen.github.io/post/go_lps_4_vscode/</guid>
       <description>VSCode Go 插件环境通常依赖一些 Go tools. 插件环境提供了以下语言特性: IntelliSense Auto Completion of symbols as you type Signature Help for functions as you type Quick Info on the symbol as you hover over it Code Navigation Go to or Peek Definition of symbols Find References of symbols and Implementations of interfaces</description>
-    </item>
-    
-    <item>
-      <title>VScode 安装 go 插件</title>
-      <link>https://simpleowen.github.io/post/vscode_go_extensions/</link>
-      <pubDate>Wed, 29 May 2019 12:11:34 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/post/vscode_go_extensions/</guid>
-      <description>在 VScode 使用过程中，会提示安装 各种 go 插件，点击安装后，很多插件安装都会失败 其中，安装失败的包主要是 golang.org 上的包(由于众所周知的原因)，而很多其他包又</description>
     </item>
     
   </channel>

@@ -6,10 +6,331 @@
     <description>Recent content on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Jun 2019 02:18:26 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 22:03:45 -0400</lastBuildDate>
     
         <atom:link href="https://simpleowen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VSCode with Go Language Server</title>
+      <link>https://simpleowen.github.io/post/go_lps_4_vscode/</link>
+      <pubDate>Sat, 20 Jul 2019 22:03:45 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/go_lps_4_vscode/</guid>
+      
+        <description>
+
+&lt;p&gt;&lt;code&gt;VSCode Go&lt;/code&gt; 插件环境通常依赖一些 &lt;a href=&#34;https://github.com/Microsoft/vscode-go/wiki/Go-tools-that-the-Go-extension-depends-on&#34;&gt;Go tools&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;插件环境提供了以下语言特性:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IntelliSense
+
+&lt;ul&gt;
+&lt;li&gt;Auto Completion of symbols as you type&lt;/li&gt;
+&lt;li&gt;Signature Help for functions as you type&lt;/li&gt;
+&lt;li&gt;Quick Info on the symbol as you hover over it&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Code Navigation
+
+&lt;ul&gt;
+&lt;li&gt;Go to or Peek Definition of symbols&lt;/li&gt;
+&lt;li&gt;Find References of symbols and Implementations of interfaces&lt;/li&gt;
+&lt;li&gt;Go to symbol in file or see the file outline&lt;/li&gt;
+&lt;li&gt;Go to symbol in workspace&lt;/li&gt;
+&lt;li&gt;Toggle between a Go program and the corresponding test file&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Code Editing
+
+&lt;ul&gt;
+&lt;li&gt;Code Snippets for quick coding&lt;/li&gt;
+&lt;li&gt;Format code on file save as well as format manually. To disable the format on save - feature, add &amp;ldquo;[go]&amp;rdquo;: {&amp;ldquo;editor.formatOnSave&amp;rdquo;: false} to your settings.&lt;/li&gt;
+&lt;li&gt;Symbol Rename&lt;/li&gt;
+&lt;li&gt;Add Imports to current file&lt;/li&gt;
+&lt;li&gt;Add/Remove Tags on struct fields&lt;/li&gt;
+&lt;li&gt;Generate method stubs for interfaces&lt;/li&gt;
+&lt;li&gt;Fill struct literals with default values&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Diagnostics
+
+&lt;ul&gt;
+&lt;li&gt;Build-on-save to compile code and show build errors&lt;/li&gt;
+&lt;li&gt;Vet-on-save to run go vet and show errors as warnings&lt;/li&gt;
+&lt;li&gt;Lint-on-save to show linting errors as warnings&lt;/li&gt;
+&lt;li&gt;Semantic/Syntactic error reporting as you type&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Testing
+
+&lt;ul&gt;
+&lt;li&gt;Run Tests under the cursor, in current file, in current package, in the whole workspace using either commands or codelens&lt;/li&gt;
+&lt;li&gt;Run Benchmarks under the cursor using either commands or codelens&lt;/li&gt;
+&lt;li&gt;Show code coverage either on demand or after running tests in the package&lt;/li&gt;
+&lt;li&gt;Generate unit tests skeleton&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Debugging
+
+&lt;ul&gt;
+&lt;li&gt;Debug your code, binaries or tests&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Others
+
+&lt;ul&gt;
+&lt;li&gt;Install/Update all dependent Go tools&lt;/li&gt;
+&lt;li&gt;Upload to the Go Playground&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;若使用 &lt;code&gt;Go language server&lt;/code&gt;, 则不再依赖大部分的 tools, 那些特性将由 &lt;code&gt;Go language server&lt;/code&gt; 提供.&lt;/p&gt;
+
+&lt;p&gt;如果你在使用 Go modules 管理模块, 强烈建议使用 &lt;code&gt;language server&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;Below are the tools essential for the general features of this extension. If you have chosen to use the Go language server, then most of the below tools are no longer needed as the corresponding features will be provided by the language server. Eventually, once the language server is stable, we will move to using it and deprecate the use of individual tools below.
+
+NOTE: If you are using Go modules, then we strongly recommend using the Go language server as it performs much better than the tools below.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;what-is-lsp&#34;&gt;What is LSP&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The LSP allows any text editor to be extended with IDE-like features&lt;/p&gt;
+
+&lt;p&gt;The Language Server protocol is used between a tool (the client) and a language smartness provider (the server) to integrate features like auto complete, go to definition, find all references and alike into the tool&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://microsoft.github.io/language-server-protocol/img/language-server-sequence.png&#34; alt=&#34;how lsp works&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Go language server&lt;/code&gt; 是 &lt;code&gt;LSP(Language Server Protocol)&lt;/code&gt; 的一种, 官方实现是 &lt;a href=&#34;https://github.com/golang/tools/tree/master/cmd/gopls&#34;&gt;gopls&lt;/a&gt;, sourcegraph 也实现了一个 &lt;code&gt;Go language server&lt;/code&gt; 名为 &lt;a href=&#34;https://github.com/sourcegraph/go-langserver&#34;&gt;go-langserver&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;VSCode 推荐使用 &lt;code&gt;gopls&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;Previously, we added support to use go-langserver, the language server from Sourcegraph. There is no active development for it anymore and it doesn&amp;#39;t support Go modules. Therefore, we are now switching to use gopls, the language server from Google which is currently in active development.
+
+If you are already using the language server from Sourcegraph, you can continue to use it as long as you are not using Go modules. We do suggest you to move to using gopls though.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Microsoft 维护了一个 &lt;a href=&#34;https://github.com/Microsoft/language-server-protocol/blob/gh-pages/_implementors/servers.md&#34;&gt;language server list&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;language server 相当于服务端, 编辑器(如 vscode)是客户端. 客户端与服务端之间通过 LSP 进行数据交互.&lt;/p&gt;
+
+&lt;h2 id=&#34;安装-go-language-server&#34;&gt;安装 Go Language Server&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;go get golang.org/x/tools/gopls@latest&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;配置-go-language-server&#34;&gt;配置 Go Language Server&lt;/h2&gt;
+
+&lt;p&gt;VSCode settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    &amp;#34;go.useLanguageServer&amp;#34;: true,
+    &amp;#34;[go]&amp;#34;: {
+        &amp;#34;editor.snippetSuggestions&amp;#34;: &amp;#34;none&amp;#34;,
+        &amp;#34;editor.formatOnSave&amp;#34;: true,
+        &amp;#34;editor.codeActionsOnSave&amp;#34;: {
+            &amp;#34;source.organizeImports&amp;#34;: true
+        }
+    },
+    &amp;#34;go.languageServerExperimentalFeatures&amp;#34;: {
+        &amp;#34;format&amp;#34;: false,
+        &amp;#34;autoComplete&amp;#34;: true,
+        &amp;#34;rename&amp;#34;: true,
+        &amp;#34;goToDefinition&amp;#34;: true,
+        &amp;#34;hover&amp;#34;: true,
+        &amp;#34;signatureHelp&amp;#34;: true,
+        &amp;#34;goToTypeDefinition&amp;#34;: true,
+        &amp;#34;goToImplementation&amp;#34;: true,
+        &amp;#34;documentSymbols&amp;#34;: true,
+        &amp;#34;workspaceSymbols&amp;#34;: true,
+        &amp;#34;findReferences&amp;#34;: true,
+        &amp;#34;diagnostics&amp;#34;: false
+    },
+    &amp;#34;go.languageServerFlags&amp;#34;: [
+        &amp;#34;-rpc.trace&amp;#34;, // for more detailed debug logging
+        &amp;#34;serve&amp;#34;,
+        &amp;#34;--debug=localhost:6060&amp;#34;, // to investigate memory usage, see profiles 
+    ],
+    &amp;#34;files.eol&amp;#34;: &amp;#34;\n&amp;#34;, // formatting only supports LF line endings
+    &amp;#34;go.goroot&amp;#34;: &amp;#34;/usr/local/go&amp;#34;,
+    &amp;#34;go.gopath&amp;#34;: &amp;#34;~/go&amp;#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;异常&#34;&gt;异常&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The gopls server crashed 5 times in the last 3 minutes. The server will not be restarted.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;类似问题:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Microsoft/vscode-go/issues/2459&#34;&gt;The gopls server crashed when upgrade vscode-go to 0.10.0 · Issue #2459 · microsoft/vscode-go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/microsoft/vscode-go/issues/2532&#34;&gt;The gopls server crashed when create new file · Issue #2532 · microsoft/vscode-go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;解决方案&#34;&gt;解决方案&lt;/h3&gt;
+
+&lt;p&gt;升级 &lt;code&gt;gopls&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;go get -u golang.org/x/tools/cmd/gopls&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Command + Shift + P&lt;/li&gt;
+&lt;li&gt;Input &lt;code&gt;go install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select -&amp;gt; Go: Install/Update Tools&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select All -&amp;gt; OK&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;Installing 18 tools at ~/go/bin
+gocode
+gopkgs
+go-outline
+go-symbols
+guru
+gorename
+dlv
+gocode-gomod
+godef
+goreturns
+golint
+gopls
+gotests
+gomodifytags
+impl
+fillstruct
+goplay
+godoctor
+
+Installing github.com/mdempsky/gocode SUCCEEDED
+Installing github.com/uudashr/gopkgs/cmd/gopkgs SUCCEEDED
+Installing github.com/ramya-rao-a/go-outline SUCCEEDED
+Installing github.com/acroca/go-symbols SUCCEEDED
+Installing golang.org/x/tools/cmd/guru SUCCEEDED
+Installing golang.org/x/tools/cmd/gorename SUCCEEDED
+Installing github.com/go-delve/delve/cmd/dlv SUCCEEDED
+Installing github.com/stamblerre/gocode SUCCEEDED
+Installing github.com/rogpeppe/godef SUCCEEDED
+Installing github.com/sqs/goreturns SUCCEEDED
+Installing golang.org/x/lint/golint SUCCEEDED
+Installing golang.org/x/tools/cmd/gopls SUCCEEDED
+Installing github.com/cweill/gotests/... SUCCEEDED
+Installing github.com/fatih/gomodifytags SUCCEEDED
+Installing github.com/josharian/impl SUCCEEDED
+Installing github.com/davidrjenni/reftools/cmd/fillstruct SUCCEEDED
+Installing github.com/haya14busa/goplay/cmd/goplay SUCCEEDED
+Installing github.com/godoctor/godoctor SUCCEEDED
+
+Reload VS Code window to use the Go language server
+All tools successfully installed. You&amp;#39;re ready to Go :).&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;refs&#34;&gt;Refs&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/zh-cn/visualstudio/extensibility/language-server-protocol?view=vs-2019&#34;&gt;语言服务器协议概述 - Visual Studio | Microsoft Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://microsoft.github.io/language-server-protocol/&#34;&gt;Language Server Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://langserver.org/&#34;&gt;Langserver.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang/go/wiki/gopls&#34;&gt;gopls · golang/go Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Microsoft/vscode-go/wiki/Go-tools-that-the-Go-extension-depends-on&#34;&gt;Go tools that the Go extension depends on · microsoft/vscode-go Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/microsoft/vscode-go#go-language-server&#34;&gt;microsoft/vscode-go: An extension for VS Code which provides support for the Go language.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/microsoft/language-server-protocol&#34;&gt;microsoft/language-server-protocol: Defines a common protocol for language servers.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>Go install 安装 go 工具</title>

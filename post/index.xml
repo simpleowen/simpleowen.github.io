@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 我坦白~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Jun 2019 02:18:26 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 22:03:45 -0400</lastBuildDate>
     
 	<atom:link href="https://simpleowen.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VSCode with Go Language Server</title>
+      <link>https://simpleowen.github.io/post/go_lps_4_vscode/</link>
+      <pubDate>Sat, 20 Jul 2019 22:03:45 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/post/go_lps_4_vscode/</guid>
+      <description>VSCode Go 插件环境通常依赖一些 Go tools. 插件环境提供了以下语言特性: IntelliSense Auto Completion of symbols as you type Signature Help for functions as you type Quick Info on the symbol as you hover over it Code Navigation Go to or Peek Definition of symbols Find References of symbols and Implementations of interfaces</description>
+    </item>
     
     <item>
       <title>Go install 安装 go 工具</title>
