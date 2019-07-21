@@ -1,5 +1,6 @@
 # 目录
 
+- [VSCode with Go Language Server](https://simpleowen.github.io/post/go_lps_4_vscode/)
 - [如何制作一篇 Gopher 风格的 slide](https://simpleowen.github.io/post/gopher_slide/)
 - [Go install 安装 go 工具](https://simpleowen.github.io/post/go_install/)
 - [Shell 初步](https://simpleowen.github.io/post/shell_intro/)
