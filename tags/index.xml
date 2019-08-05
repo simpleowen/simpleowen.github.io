@@ -30,11 +30,20 @@
     </item>
     
     <item>
-      <title>vscode</title>
+      <title>VSCode</title>
       <link>https://simpleowen.github.io/tags/vscode/</link>
       <pubDate>Sat, 20 Jul 2019 22:03:45 -0400</pubDate>
       
       <guid>https://simpleowen.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Present</title>
+      <link>https://simpleowen.github.io/tags/present/</link>
+      <pubDate>Wed, 26 Jun 2019 02:18:26 -0400</pubDate>
+      
+      <guid>https://simpleowen.github.io/tags/present/</guid>
       <description></description>
     </item>
     
@@ -48,11 +57,11 @@
     </item>
     
     <item>
-      <title>present</title>
-      <link>https://simpleowen.github.io/tags/present/</link>
-      <pubDate>Wed, 26 Jun 2019 02:18:26 -0400</pubDate>
+      <title>Slide</title>
+      <link>https://simpleowen.github.io/tags/slide/</link>
+      <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
       
-      <guid>https://simpleowen.github.io/tags/present/</guid>
+      <guid>https://simpleowen.github.io/tags/slide/</guid>
       <description></description>
     </item>
     
@@ -62,15 +71,6 @@
       <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
       
       <guid>https://simpleowen.github.io/tags/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>slide</title>
-      <link>https://simpleowen.github.io/tags/slide/</link>
-      <pubDate>Wed, 26 Jun 2019 01:46:37 -0400</pubDate>
-      
-      <guid>https://simpleowen.github.io/tags/slide/</guid>
       <description></description>
     </item>
     

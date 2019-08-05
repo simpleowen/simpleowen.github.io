@@ -26,16 +26,16 @@
   </url>
   
   <url>
+    <loc>https://simpleowen.github.io/tags/vscode/</loc>
+    <lastmod>2019-07-20T22:03:45-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simpleowen.github.io/post/go_lps_4_vscode/</loc>
     <lastmod>2019-07-20T22:03:45-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://simpleowen.github.io/tags/vscode/</loc>
-    <lastmod>2019-07-20T22:03:45-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -52,25 +52,25 @@
   </url>
   
   <url>
-    <loc>https://simpleowen.github.io/tags/go-install/</loc>
-    <lastmod>2019-06-26T02:18:26-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://simpleowen.github.io/tags/present/</loc>
     <lastmod>2019-06-26T02:18:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simpleowen.github.io/tags/talks/</loc>
-    <lastmod>2019-06-26T01:46:37-04:00</lastmod>
+    <loc>https://simpleowen.github.io/tags/go-install/</loc>
+    <lastmod>2019-06-26T02:18:26-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simpleowen.github.io/tags/slide/</loc>
+    <lastmod>2019-06-26T01:46:37-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simpleowen.github.io/tags/talks/</loc>
     <lastmod>2019-06-26T01:46:37-04:00</lastmod>
     <priority>0</priority>
   </url>
